@@ -1,0 +1,6 @@
+framework module Pods_flappybird {
+  umbrella header "Pods-flappybird-umbrella.h"
+
+  export *
+  module * { export * }
+}

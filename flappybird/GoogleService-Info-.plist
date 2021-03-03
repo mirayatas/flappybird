@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>910185950307-vrnao6pgrc5sobb9mf3c8tfl6n3jlnob.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.910185950307-vrnao6pgrc5sobb9mf3c8tfl6n3jlnob</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBL-jL-0aW6IRjMyn3uSgo5pT1LN3i-g_w</string>
+	<key>GCM_SENDER_ID</key>
+	<string>910185950307</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.flappybird.flappybird</string>
+	<key>PROJECT_ID</key>
+	<string>flappybird-53089</string>
+	<key>STORAGE_BUCKET</key>
+	<string>flappybird-53089.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:910185950307:ios:85ac19f33dfc7cea4c5c56</string>
+	<key>DATABASE_URL</key>
+	<string>https://flappybird-53089.firebaseio.com</string>
+</dict>
+</plist>

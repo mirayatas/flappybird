@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UBe-pJ-Oqa">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="6ca-R9-4aB">
+            <objects>
+                <viewController id="UBe-pJ-Oqa" customClass="WelcomeViewController" customModule="flappybird" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="edN-xf-233">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="2f5-xj-57x">
+                                <rect key="frame" x="-251" y="-489" width="1080" height="1500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJw-Nn-lZX">
+                                <rect key="frame" x="100" y="394" width="214" height="38"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="25"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8z4-Gg-2N2" kind="show" id="zUd-G2-pfl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gnx-uQ-010">
+                                <rect key="frame" x="100" y="502" width="214" height="38"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="25"/>
+                                <state key="normal" title="Signin">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="N7X-N7-oMt" kind="show" id="aO7-6E-t6U"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jJw-Nn-lZX" firstAttribute="leading" secondItem="lvt-P8-zab" secondAttribute="leading" constant="100" id="6Qd-uM-VqR"/>
+                            <constraint firstItem="Gnx-uQ-010" firstAttribute="leading" secondItem="lvt-P8-zab" secondAttribute="leading" constant="100" id="B6x-Mk-QNL"/>
+                            <constraint firstItem="jJw-Nn-lZX" firstAttribute="top" secondItem="lvt-P8-zab" secondAttribute="top" constant="350" id="QPy-nM-9ak"/>
+                            <constraint firstItem="lvt-P8-zab" firstAttribute="trailing" secondItem="jJw-Nn-lZX" secondAttribute="trailing" constant="100" id="hdW-LN-4yR"/>
+                            <constraint firstItem="Gnx-uQ-010" firstAttribute="top" secondItem="jJw-Nn-lZX" secondAttribute="bottom" constant="70" id="tRT-fh-xIn"/>
+                            <constraint firstItem="lvt-P8-zab" firstAttribute="trailing" secondItem="Gnx-uQ-010" secondAttribute="trailing" constant="100" id="xhg-No-fql"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lvt-P8-zab"/>
+                    </view>
+                    <connections>
+                        <outlet property="LoginButton" destination="jJw-Nn-lZX" id="pRh-20-y4i"/>
+                        <outlet property="SigninButton" destination="Gnx-uQ-010" id="Kh1-yV-kie"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h1k-9h-6ve" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2023.1884057971015" y="63.616071428571423"/>
+        </scene>
+        <!--Signin View Controller-->
+        <scene sceneID="yL3-iA-zhm">
+            <objects>
+                <viewController id="N7X-N7-oMt" customClass="SigninViewController" customModule="flappybird" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7uq-ng-bcE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="aXU-It-akq">
+                                <rect key="frame" x="-362" y="-580" width="1080" height="1500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rck-fd-9hr">
+                                <rect key="frame" x="75" y="200" width="239" height="35"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lXd-1C-hCh">
+                                <rect key="frame" x="75" y="285" width="239" height="35"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0p5-aO-qvP">
+                                <rect key="frame" x="75" y="370" width="239" height="34"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NvZ-8l-C0T">
+                                <rect key="frame" x="75" y="524" width="239" height="38"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="25"/>
+                                <state key="normal" title="Signin">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="SigninTapped:" destination="N7X-N7-oMt" eventType="touchUpInside" id="uEr-Du-LgV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8c-hC-qaa">
+                                <rect key="frame" x="75" y="612" width="239" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="yEx-IE-ri2" firstAttribute="trailing" secondItem="rck-fd-9hr" secondAttribute="trailing" constant="100" id="63v-uF-Qkm"/>
+                            <constraint firstItem="c8c-hC-qaa" firstAttribute="top" secondItem="NvZ-8l-C0T" secondAttribute="bottom" constant="50" id="CHR-ol-L0n"/>
+                            <constraint firstItem="yEx-IE-ri2" firstAttribute="trailing" secondItem="c8c-hC-qaa" secondAttribute="trailing" constant="100" id="DGz-i4-UzJ"/>
+                            <constraint firstItem="NvZ-8l-C0T" firstAttribute="leading" secondItem="yEx-IE-ri2" secondAttribute="leading" constant="75" id="DwB-Ew-wGv"/>
+                            <constraint firstItem="0p5-aO-qvP" firstAttribute="top" secondItem="lXd-1C-hCh" secondAttribute="bottom" constant="50" id="E6b-AL-pGJ"/>
+                            <constraint firstItem="c8c-hC-qaa" firstAttribute="leading" secondItem="yEx-IE-ri2" secondAttribute="leading" constant="75" id="NW2-mi-g9X"/>
+                            <constraint firstItem="NvZ-8l-C0T" firstAttribute="top" secondItem="0p5-aO-qvP" secondAttribute="bottom" constant="120" id="Pc4-3q-xXM"/>
+                            <constraint firstItem="yEx-IE-ri2" firstAttribute="trailing" secondItem="NvZ-8l-C0T" secondAttribute="trailing" constant="100" id="eUN-hj-StU"/>
+                            <constraint firstItem="yEx-IE-ri2" firstAttribute="trailing" secondItem="lXd-1C-hCh" secondAttribute="trailing" constant="100" id="g1E-7e-c6I"/>
+                            <constraint firstItem="rck-fd-9hr" firstAttribute="leading" secondItem="yEx-IE-ri2" secondAttribute="leading" constant="75" id="kl1-Lh-OwU"/>
+                            <constraint firstItem="rck-fd-9hr" firstAttribute="top" secondItem="yEx-IE-ri2" secondAttribute="top" constant="200" id="m0g-oV-1ss"/>
+                            <constraint firstItem="lXd-1C-hCh" firstAttribute="leading" secondItem="yEx-IE-ri2" secondAttribute="leading" constant="75" id="p76-Yu-iSI"/>
+                            <constraint firstItem="lXd-1C-hCh" firstAttribute="top" secondItem="rck-fd-9hr" secondAttribute="bottom" constant="50" id="q4R-Hq-HBU"/>
+                            <constraint firstItem="0p5-aO-qvP" firstAttribute="leading" secondItem="yEx-IE-ri2" secondAttribute="leading" constant="75" id="qxj-cE-73m"/>
+                            <constraint firstItem="yEx-IE-ri2" firstAttribute="trailing" secondItem="0p5-aO-qvP" secondAttribute="trailing" constant="100" id="rn3-BB-8mz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yEx-IE-ri2"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1mW-Pt-1DN"/>
+                    <connections>
+                        <outlet property="EmailTextfield" destination="lXd-1C-hCh" id="qjC-NS-zB3"/>
+                        <outlet property="ErrorLabel" destination="c8c-hC-qaa" id="Ixf-Yg-Dlx"/>
+                        <outlet property="SigninButton" destination="NvZ-8l-C0T" id="NHT-Us-BrX"/>
+                        <outlet property="UserNameTextfield" destination="rck-fd-9hr" id="Pnq-Jf-YDb"/>
+                        <outlet property="passwordTextfield" destination="0p5-aO-qvP" id="24W-gk-CZ4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KyR-Aj-z8e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-688" y="420"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="M5X-Q3-wOo">
+            <objects>
+                <viewController id="8z4-Gg-2N2" customClass="LoginViewController" customModule="flappybird" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mqx-8Z-G9V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="6QA-ne-Fzg">
+                                <rect key="frame" x="-251" y="-386" width="1080" height="1500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RhJ-iO-aEf">
+                                <rect key="frame" x="75" y="200" width="239" height="35"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Wd-YT-bWt">
+                                <rect key="frame" x="75" y="305" width="239" height="34"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0I-X7-TdJ">
+                                <rect key="frame" x="75" y="459" width="239" height="38"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="25"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="LoginTapped:" destination="8z4-Gg-2N2" eventType="touchUpInside" id="0hl-gV-lDi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fku-J5-Pqf">
+                                <rect key="frame" x="75" y="547" width="239" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Fku-J5-Pqf" firstAttribute="leading" secondItem="5TA-Oq-62s" secondAttribute="leading" constant="75" id="1Am-Im-Crh"/>
+                            <constraint firstItem="5TA-Oq-62s" firstAttribute="trailing" secondItem="RhJ-iO-aEf" secondAttribute="trailing" constant="100" id="BHg-Ga-rQF"/>
+                            <constraint firstItem="1Wd-YT-bWt" firstAttribute="leading" secondItem="5TA-Oq-62s" secondAttribute="leading" constant="75" id="Eaf-gh-hjv"/>
+                            <constraint firstItem="5TA-Oq-62s" firstAttribute="trailing" secondItem="Fku-J5-Pqf" secondAttribute="trailing" constant="100" id="GgB-ud-TvT"/>
+                            <constraint firstItem="Fku-J5-Pqf" firstAttribute="top" secondItem="F0I-X7-TdJ" secondAttribute="bottom" constant="50" id="LTn-Oh-EQQ"/>
+                            <constraint firstItem="F0I-X7-TdJ" firstAttribute="leading" secondItem="5TA-Oq-62s" secondAttribute="leading" constant="75" id="Pxt-1Q-5xt"/>
+                            <constraint firstItem="5TA-Oq-62s" firstAttribute="trailing" secondItem="F0I-X7-TdJ" secondAttribute="trailing" constant="100" id="VAb-aU-ih1"/>
+                            <constraint firstItem="RhJ-iO-aEf" firstAttribute="leading" secondItem="5TA-Oq-62s" secondAttribute="leading" constant="75" id="YKx-jl-R6U"/>
+                            <constraint firstItem="F0I-X7-TdJ" firstAttribute="top" secondItem="1Wd-YT-bWt" secondAttribute="bottom" constant="120" id="bok-iP-9Fk"/>
+                            <constraint firstItem="RhJ-iO-aEf" firstAttribute="top" secondItem="5TA-Oq-62s" secondAttribute="top" constant="200" id="kvP-Cj-y0v"/>
+                            <constraint firstItem="5TA-Oq-62s" firstAttribute="trailing" secondItem="1Wd-YT-bWt" secondAttribute="trailing" constant="100" id="rux-Tt-nKL"/>
+                            <constraint firstItem="1Wd-YT-bWt" firstAttribute="top" secondItem="RhJ-iO-aEf" secondAttribute="bottom" constant="70" id="sVe-sk-t4U"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5TA-Oq-62s"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XsD-ir-ABZ"/>
+                    <connections>
+                        <outlet property="EmailTextfield" destination="RhJ-iO-aEf" id="614-tf-eI4"/>
+                        <outlet property="ErrorLabel" destination="Fku-J5-Pqf" id="fU2-h8-x1j"/>
+                        <outlet property="LoginButton" destination="F0I-X7-TdJ" id="hKB-KE-EWV"/>
+                        <outlet property="Passwordtextfield" destination="1Wd-YT-bWt" id="HOO-dM-uDT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZJz-CZ-Hps" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-687" y="-408"/>
+        </scene>
+        <!--Start View Controller-->
+        <scene sceneID="2cI-Y9-1of">
+            <objects>
+                <viewController storyboardIdentifier="StartVC" id="Ppn-ta-rBl" customClass="StartViewController" customModule="flappybird" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UGk-BH-2UJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="iBZ-La-VtC">
+                                <rect key="frame" x="-333" y="-398" width="1080" height="1500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ct-J9-Vhc">
+                                <rect key="frame" x="100" y="380" width="214" height="38"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="25"/>
+                                <state key="normal" title="Başla!">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="StartGame" destination="Ppn-ta-rBl" eventType="touchUpInside" id="NDl-Sn-UcM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hazır Mısın?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ec2-Pb-tbd">
+                                <rect key="frame" x="100" y="304" width="214" height="26"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8Ct-J9-Vhc" firstAttribute="leading" secondItem="btd-8Y-mVn" secondAttribute="leading" constant="100" id="3Ui-9W-f5E"/>
+                            <constraint firstItem="8Ct-J9-Vhc" firstAttribute="top" secondItem="ec2-Pb-tbd" secondAttribute="bottom" constant="50" id="BGt-DD-1h1"/>
+                            <constraint firstItem="btd-8Y-mVn" firstAttribute="trailing" secondItem="8Ct-J9-Vhc" secondAttribute="trailing" constant="100" id="JAa-lx-bWR"/>
+                            <constraint firstItem="btd-8Y-mVn" firstAttribute="trailing" secondItem="ec2-Pb-tbd" secondAttribute="trailing" constant="100" id="Sbn-fv-5np"/>
+                            <constraint firstItem="ec2-Pb-tbd" firstAttribute="leading" secondItem="btd-8Y-mVn" secondAttribute="leading" constant="100" id="vPf-md-gEs"/>
+                            <constraint firstItem="ec2-Pb-tbd" firstAttribute="top" secondItem="btd-8Y-mVn" secondAttribute="top" constant="260" id="vac-Dn-Szo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="btd-8Y-mVn"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cqQ-TL-tDw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="210" y="63"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController storyboardIdentifier="game" id="BV1-FR-VrT" customClass="GameViewController" customModule="flappybird" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="NMN-g8-S83"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DDS-9P-gqG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1114" y="64"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="1080" height="1500"/>
+    </resources>
+</document>
